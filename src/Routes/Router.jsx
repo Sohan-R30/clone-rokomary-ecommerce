@@ -9,7 +9,8 @@ import MonihariCategory from "../components/Monihari.jsx/MonihariCategory";
 import KidszoneLayout from "../components/layout/KidszoneLayout";
 import MonihariLayout from "../components/layout/MonihariLayout";
 import KidsZoneCategoy from "../components/KidsZone/KidsZoneCategory";
-import OffersLayout from "../components/Offers/OffersLayout";
+import OffersLayout from "../components/layout/OffersLayout";
+import QuizLayout from "../components/layout/QuizLayout";
 
 
 const Router = createBrowserRouter([
@@ -46,10 +47,6 @@ const Router = createBrowserRouter([
                 element: <OffersLayout/>
             },
             {
-                path: "/quiz",
-                element: <p className=" text-center text-2xl">quiz</p>
-            },
-            {
                 path: "/blog",
                 element: <p className=" text-center text-2xl">blog</p>
             },
@@ -58,6 +55,10 @@ const Router = createBrowserRouter([
     {
         path: "login",
         element: <LoginLayout/>
+    },
+    {
+        path: "/quiz",
+        element: <QuizLayout/>
     },
     {
         path: "booklayout",
