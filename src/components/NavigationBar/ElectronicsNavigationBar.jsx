@@ -9,6 +9,7 @@ const ElectronicsNavigationBar = () => {
         setSelectElectronicsCategory(bookCategory)
         setactive(true)
     }
+    console.log(selectElectronicsCategory);
     return (
         <div className={`flex gap-4 mb-5 justify-center text-md ${active ? "border-t border-blue-400" : ""}`}>
         <NavLink to="/electronicsLayout/science-kit" onClick={() => handleselectElectronicCategory("বই")} className={`${({ isActive }) => isActive ? "sub-active" : "" } cursor-pointer hover:text-[#0397d3] transition ease-linear delay-300  pl-3 pr-3  pt-2 pb-2 `} >Science Kit </NavLink>

@@ -5,6 +5,10 @@ import BookCategory from "../components/Book/BookCategory";
 import BookLayout from "../components/layout/BookLayout";
 import ElectronicsLayout from "../components/layout/ElectronicsLayout";
 import ElectronicsCategory from "../components/Electronics/ElectronicsCategory";
+import MonihariCategory from "../components/Monihari.jsx/MonihariCategory";
+import KidszoneLayout from "../components/layout/KidszoneLayout";
+import MonihariLayout from "../components/layout/MonihariLayout";
+import KidsZoneCategoy from "../components/KidsZone/KidsZoneCategory";
 
 
 const Router = createBrowserRouter([
@@ -22,11 +26,11 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/monihari",
-                element: <p className=" text-center text-2xl">monihari</p>
+                element: <MonihariCategory/>
             },
             {
                 path: "/kids-zone",
-                element: <p className=" text-center text-2xl">kids-zone</p>
+                element: <KidsZoneCategoy/>
             },
             {
                 path: "/gift-finder",
@@ -151,6 +155,94 @@ const Router = createBrowserRouter([
             {
                 path: "popular-list",
                 element: <p className=" text-center text-2xl">popular-list</p>
+            }
+        ]
+    },
+    {
+        path: "monihariLayout",
+        element: <MonihariLayout/>,
+        children: [
+            {
+                path: "islamic-accessories",
+                element: <p className="text-center text-2xl">Islamic Accessories</p>
+            },
+            {
+                path: "stationery",
+                element: <p className=" text-center text-2xl">Stationery</p>
+            },
+            {
+                path: "organic-food",
+                element: <p className=" text-center text-2xl">Organic Food </p>
+            },
+            {
+                path: "beauty-&-personal-care",
+                element: <p className=" text-center text-2xl">Beauty & Personal Care</p>
+            },
+            {
+                path: "voucher",
+                element: <p className=" text-center text-2xl">Voucher</p>
+            },
+            {
+                path: "diary-notebook",
+                element: <p className=" text-center text-2xl">Diary/Notebook</p>
+            },
+            {
+                path: "calculator",
+                element: <p className=" text-center text-2xl">Calculator</p>
+            },
+            {
+                path: "bag",
+                element: <p className=" text-center text-2xl">Bag</p>
+            },
+            {
+                path: "covid-19-protection-products",
+                element: <p className=" text-center text-2xl">Covid-19 Protection Product</p>
+            },
+        ]
+    },
+    {
+        path: "kidzoneLayout",
+        element: <KidszoneLayout/>,
+        children: [
+            {
+                path: "diaper-potty",
+                element: <p className="text-center text-2xl">Diaper & Potty</p>
+            },
+            {
+                path: "feeding",
+                element: <p className=" text-center text-2xl">Feeding</p>
+            },
+            {
+                path: "kids-toys",
+                element: <p className=" text-center text-2xl">Kids Toys </p>
+            },
+            {
+                path: "lotions-creams",
+                element: <p className=" text-center text-2xl">Lotions & Creams</p>
+            },
+            {
+                path: "teethers-pacifier",
+                element: <p className=" text-center text-2xl">Teethers & Pacifier</p>
+            },
+            {
+                path: "grooming",
+                element: <p className=" text-center text-2xl">Grooming</p>
+            },
+            {
+                path: "oral-health",
+                element: <p className=" text-center text-2xl">Oral & Health</p>
+            },
+            {
+                path: "body-wash",
+                element: <p className=" text-center text-2xl">Body Wash</p>
+            },
+            {
+                path: "mum-pot-cups",
+                element: <p className=" text-center text-2xl">Mum Pot & Cups</p>
+            },
+            {
+                path: "bathing",
+                element: <p className=" text-center text-2xl">Bathing</p>
             }
         ]
     }
