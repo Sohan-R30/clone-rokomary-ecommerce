@@ -15,6 +15,9 @@
 .footer-list ul li:hover{
     color: #0397d3;
 }
-.active {
-    @apply border-t border-r border-l border-blue-400 ;
+.active-nav {
+    @apply border-t border-r border-l border-blue-400 text-blue-400 ;
+}
+.sub-active {
+    @apply text-blue-400 ;
 }

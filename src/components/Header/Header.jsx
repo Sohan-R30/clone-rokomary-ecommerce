@@ -16,7 +16,7 @@ const Header = () => {
                     <select name="select" id="select" className="border-2 py-[9px]  border-collapse rounded-l-md  text-xl cursor-pointer outline-none focus:border-blue-300 border-b-orange-400">
                         <option selected value="all">All</option>
                         <option value="all">Book</option>
-                        <option value="all">Superstore</option>
+                        <option disabled value="all">Superstore</option>
                     </select>
                 </div>
                 <div>

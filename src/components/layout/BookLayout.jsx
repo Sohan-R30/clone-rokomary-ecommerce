@@ -1,22 +1,24 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
-import CopyRIghtFooter from "../Login/Footer/CopyRIghtFooter";
-import MainLayoutFooter from "../Login/Footer/MainLayoutFooter";
+import BookNavigationBar from "../NavigationBar/BookNavigationBar";
 import NavigationBar from "../NavigationBar/NavigationBar";
+import MainLayoutFooter from "../Login/Footer/MainLayoutFooter";
+import CopyRIghtFooter from "../Login/Footer/CopyRIghtFooter";
 
 
-const MainLayout = () => {
+const BookLayout = () => {
     return (
-        <>
+        <div>
             <Header/>
             <NavigationBar/>
+            <BookNavigationBar/>
             <div className="min-h-[40vh]">
                 <Outlet></Outlet>
             </div>
             <MainLayoutFooter/>
             <CopyRIghtFooter/>
-        </>
+        </div>
     );
 };
 
-export default MainLayout;
+export default BookLayout;
