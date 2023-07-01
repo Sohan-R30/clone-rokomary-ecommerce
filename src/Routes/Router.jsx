@@ -9,6 +9,7 @@ import MonihariCategory from "../components/Monihari.jsx/MonihariCategory";
 import KidszoneLayout from "../components/layout/KidszoneLayout";
 import MonihariLayout from "../components/layout/MonihariLayout";
 import KidsZoneCategoy from "../components/KidsZone/KidsZoneCategory";
+import OffersLayout from "../components/Offers/OffersLayout";
 
 
 const Router = createBrowserRouter([
@@ -42,7 +43,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/offers",
-                element: <p className=" text-center text-2xl">offers</p>
+                element: <OffersLayout/>
             },
             {
                 path: "/quiz",
