@@ -2,14 +2,15 @@ import logo from "../../assets/rokomary-logo.png";
 
 import { PiShoppingCartLight } from 'react-icons/pi';
 import { AiOutlineSearch } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
     return (
         <div className="flex items-center justify-between px-20 py-5 bg-white fixed top-0 left-0 right-0 z-50">
-            <div>
+            <Link to="/book">
                 <img className="w-40" src={logo} alt="logo" />
-            </div>
+            </Link>
             <div className="flex border-collapse">
                 <div>
                     <select name="select" id="select" className="border-2 py-[9px]  border-collapse rounded-l-md  text-xl cursor-pointer outline-none focus:border-blue-300 border-b-orange-400">
@@ -29,9 +30,9 @@ const Header = () => {
                 <p className="text-4xl cursor-pointer">
                     <PiShoppingCartLight></PiShoppingCartLight>
                 </p>
-                <div>
+                <Link to="login">
                     <button className="border border-[#00000092] px-5 py-2 text-md text-gray-500 rounded-lg hover:bg-green-500 hover:text-white transition ease-linear delay-50">Sign In</button>
-                </div>
+                </Link>
             </div>
         </div>
     );

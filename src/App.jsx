@@ -1,19 +1,13 @@
-import Header from "./components/Header/Header"
-import Login from "./components/Login/Login"
-import LoginPageFooter from "./components/Login/LoginPageFooter"
-import NavigationBar from "./components/NavigationBar/NavigationBar"
+import LoginLayout from "./components/layout/LoginLayout"
+import MainLayout from "./components/layout/MainLayout"
 
 function App() {
 
 
   return (
     <>
-      <Header></Header>
-      <NavigationBar></NavigationBar>
-     <div className="bg-[#f1f2f4] py-10">
-     <Login></Login>
-     </div>
-      <LoginPageFooter></LoginPageFooter>
+      <MainLayout></MainLayout>
+      {/* <LoginLayout/> */}
     </>
   )
 }

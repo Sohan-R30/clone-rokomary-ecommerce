@@ -8,7 +8,7 @@ const Login = () => {
         event.target.email.value = "";
     }
     return (
-        <div className="flex items-center justify-center bg-white py-20 shadow-2xl max-w-2xl mx-auto">
+        <div className="flex items-center justify-center bg-white py-20  shadow-md rounded-md max-w-2xl mx-auto">
             <div>
                 <div className="text-center">
                     <h3 className="uppercase text-xl font-bold">Login / Signup</h3>

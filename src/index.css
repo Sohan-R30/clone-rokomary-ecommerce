@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer-list ul{
+    list-style-type:circle;
+    margin-left: 13px;
+    font-size: 12px;
+}
+.footer-list ul li {
+    margin-top: 5px;
+    cursor: pointer;
+    transition: color 500ms ease-in-out ;
+}
+.footer-list ul li:hover{
+    color: #0397d3;
+}
+.active {
+    @apply border-t border-r border-l border-blue-400 ;
+}
