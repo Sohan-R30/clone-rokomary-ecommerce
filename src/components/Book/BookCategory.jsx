@@ -1,12 +1,21 @@
 
+import BookFairAward from "../BookFairAward/BookFairAward";
+import BookSlider from "../BookSlider/BookSlider";
+import Delivery from "../Delivary/Delivery";
 import BookNavigationBar from "../NavigationBar/BookNavigationBar";
+import SubscribeOffers from "../SubscribeOffers/SubscribeOffers";
 
 
 const BookCategory = () => {
     return (
         <div>
             <BookNavigationBar></BookNavigationBar>
-           <p className=" text-center text-2xl">book</p>
+            <div className="min-h-[50vh] bg-[#f1f2f4] py-5">
+                <BookSlider />
+                <BookFairAward />
+                <SubscribeOffers/>
+                <Delivery />
+            </div>
         </div>
     );
 };
