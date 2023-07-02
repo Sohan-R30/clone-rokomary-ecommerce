@@ -10,7 +10,9 @@ const MonihariLayout = () => {
     return (
         <div>
             <Header/>
-            <NavigationBar/>
+            <div className="mt-32">
+           <NavigationBar/>
+           </div>
             <MonihariNavigationBar/>
             <div className="min-h-[40vh]">
                 <Outlet></Outlet>

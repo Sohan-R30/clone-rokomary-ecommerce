@@ -21,3 +21,9 @@
 .sub-active {
     @apply text-blue-400 ;
 }
+.industrialBanner{
+    background-image: url("../src/assets/industrialOffers/corporate_header_bg.png");
+}
+.industrialSlider{
+    background-image: url("../src/assets/corporate_client_bg.png");
+}

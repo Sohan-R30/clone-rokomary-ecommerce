@@ -11,6 +11,8 @@ import MonihariLayout from "../components/layout/MonihariLayout";
 import KidsZoneCategoy from "../components/KidsZone/KidsZoneCategory";
 import OffersLayout from "../components/layout/OffersLayout";
 import QuizLayout from "../components/layout/QuizLayout";
+import OfficialOffersLayout from "../components/layout/OfficialOffersLayout";
+import GiftFinderLayout from "../components/layout/GiftFinderLayout";
 
 
 const Router = createBrowserRouter([
@@ -35,20 +37,8 @@ const Router = createBrowserRouter([
                 element: <KidsZoneCategoy/>
             },
             {
-                path: "/gift-finder",
-                element: <p className=" text-center text-2xl">gift-finder</p>
-            },
-            {
-                path: "/insdustrial-order",
-                element: <p className=" text-center text-2xl">insdustrial-order</p>
-            },
-            {
                 path: "/offers",
                 element: <OffersLayout/>
-            },
-            {
-                path: "/blog",
-                element: <p className=" text-center text-2xl">blog</p>
             },
         ]
     },
@@ -59,6 +49,14 @@ const Router = createBrowserRouter([
     {
         path: "/quiz",
         element: <QuizLayout/>
+    },
+    {
+        path: "/insdustrial-order",
+        element: <OfficialOffersLayout/>
+    },
+    {
+        path: "/gift-finder",
+        element: <GiftFinderLayout/>
     },
     {
         path: "booklayout",

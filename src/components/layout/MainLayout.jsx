@@ -9,7 +9,9 @@ const MainLayout = () => {
     return (
         <>
             <Header/>
-            <NavigationBar/>
+            <div className="mt-32">
+           <NavigationBar/>
+           </div>
             <div className="min-h-[40vh]">
                 <Outlet></Outlet>
             </div>

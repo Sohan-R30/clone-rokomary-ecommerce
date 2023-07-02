@@ -9,7 +9,9 @@ const QuizLayout = () => {
     return (
         <>
             <Header />
-            <NavigationBar/>
+            <div className="mt-32">
+           <NavigationBar/>
+           </div>
             <div className="min-h-[50vh] bg-[#f1f2f4] py">
                 <QuizCategory></QuizCategory>
             </div>
